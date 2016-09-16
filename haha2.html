@@ -1,10 +1,17 @@
 <html>
 <script type= "text/javascript">
-    function show_text() {
-        alert('hi');
-    }
     function show_pic() {
-        alert('poka');
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
     }
 </script>
  <body>
@@ -15,8 +22,10 @@
   <td onclick="show_text()"> pic </td>
 </tr>
 <tr>
-<td colspan="2"> eto karta norvegii
-<img src="map.jpg">
+<td colspan="2"><div id="c1"> eto karta norvegii
+</div>
+<div id="c2"><img src="map.jpg">
+</div>
 </td>
 </tr>
 </table>
