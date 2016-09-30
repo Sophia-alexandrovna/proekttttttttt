@@ -1,0 +1,72 @@
+<html> 
+<head>
+  <style type="text/css">
+   table {
+    width: 500px;  
+    margin: auto; 
+   }
+   td.cc {
+    text-align: center;
+     height: 50px;
+   }
+   li {
+    text-align: center; 
+   }
+  </style>
+
+</head>
+
+<body>
+ 
+<h1 style="text-align:left" > <p> <strong><b>1.Уравнения</b></strong></p></h1>
+ <div>
+ 
+ <ol><p><i>1.x<sup><small>2</small></sup>+2x+1=0</ol>
+ 
+ <ol><p><i>2.(x+1)<sup><small>x</small></sup>=(x-1)<sup><small>2x</small></sup></ol>
+ <ol><p><i>3.sin<sup><small>2</small></sup>x=cos(&#960-x)</ol>
+  
+ 
+ </div>
+ <h2 style="text-align:left"><b> 2. Таблицы</b></h2>
+
+<h3 style="text-align:left"> <b>2.1.Структура</b></h3>
+
+<table width="200"  border="1" align="left"> 
+    <tr>
+     <td class="cc" width="20%"></td>
+      <td class="cc" width="80%" colspan="2">Колонки</td>
+       </tr>
+      <tr>
+     <td class="cc" width="20%" height="2.5%" rowspan="2" >Строки</td>
+     <td class="cc" width="40%" height="50%">Ячейка А</td>
+     <td class="cc" width="40%" height="50%">Ячейка В</td>
+     </tr>
+     <tr>
+     <td class="cc" width="40%" height="2,5%">Ячейка C</td>
+     <td class="cc" width="40%" height="50%">Ячейка D </td>
+     </tr>
+     </table>
+    
+    
+    <h4 style="text-align:left" <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><p>2.2 Цвета</p></h4><br />
+    
+     <table  border="1" align="left">
+    
+     <tr>
+     <td class="cc" bgcolor="red">Красный</td>
+     </tr>
+     <tr>
+     <td class="cc" bgcolor="yellow">Жёлтый</td>
+     </tr>
+     <tr>
+     <td class="cc" bgcolor="green">Зеленый</td>
+     </tr>
+     <tr>
+     <td class="cc" bgcolor=blue>Синий</td>
+     </tr>
+     
+   </table>
+   
+  </body>
+</html>
