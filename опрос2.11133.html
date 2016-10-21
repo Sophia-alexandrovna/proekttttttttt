@@ -1,0 +1,155 @@
+<html>
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css"
+                         href="filecss.css">
+<link rel="stylesheet" type="text/css"
+                         href="newmenu.css">
+ <style type="text/css">
+
+ol{
+    text-align: center;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 15pt;
+}
+
+span.quest {font-weight: bold; color:goldenrod;}
+span.titles{color:goldenrod;}
+span.answer {color:mediumturquoise;}
+button{position: absolute; padding-right: 300px;}
+h2 {
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 19pt; }
+
+ </style>
+ </head>
+ 
+  <body>
+  <div id="header">
+    <div class="wrap">
+        <div id="logo">
+            <h1>Norway</h1>
+        </div><!--logo-->
+        <div id="menu_wrapper">
+            <ul id="nav">
+                
+                <li><a class="active" href="pics.html"><p>HOME</p>  </a></li>
+  <li><a href="опрос2.1.html" ><p>QUIZ</p>  </a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><p>GEOGRAPHY</p></a>
+    <div class="dropdown-content">
+      <a href="#"><p>INTERESTING PLACES</p></a>
+     
+      <a href="map44.html" target="_blank"><p>MAP</p></a>
+               <li id="end"><a href="#"><p>CONTACT</p></a></li>
+               </div>
+            </ul>
+        </div>
+    </div><!--wrap-->
+</div><!--header-->
+ 
+
+<script type="text/javascript">
+
+var title = 'Lets check what you know about Norway';
+
+var questions=[
+{
+    text: "How was Norway originally called? ",
+    answers: ["Norweyi",
+          "Nordindong",
+          "Nordweg",
+          "Norqwaq"],
+    correctAnswer: 2 
+},
+{
+    text: "What is Norway’s national symbol?"+"\n",
+    answers: ["lion",
+          "lake ",
+          "dragon",
+          "castle"],
+    correctAnswer: 0
+},
+{
+    text: "If you own a television in Norway, you have to pay an annual licensing fee?",
+    answers: ["yes",
+          "no",
+          "dont know"],
+    correctAnswer: 0
+},
+{
+    text: "Who discovered Norway?",
+    answers: ["Willem Janszoon",
+          "Dik Hugh",
+          "James Cook",
+          "Al Tasn"],
+    correctAnswer: 3
+},
+{
+    text: "Is Norway the world’s largest exporter of salmon.?",
+    answers: ["yes",
+          "no",
+          "dont know"],
+    correctAnswer: 0
+}
+];
+var yourAns = new Array;
+var score = 0;
+function Engine(question, answer) {yourAns[question]=answer;}
+function Score(){
+   var answerText = "Results:\n";
+   for(var i = 0; i < yourAns.length; ++i){
+    var num = i+1;
+    answerText=answerText+"\n    Question "+ num +"";
+    if(yourAns[i]!=questions[i].correctAnswer){
+        answerText=answerText+"\n    Right answer: " +
+        questions[i].answers[questions[i].correctAnswer] + "\n";
+      }
+        else{
+        answerText=answerText+": Right! \n";
+        ++score;
+        }
+       }
+   answerText=answerText+"\n Right answers: "+score+"\n";
+   alert(answerText);
+   yourAns = [];
+   score = 0;
+   clearForm("quiz");
+}
+function clearForm(name) {
+   var f = document.forms[name];
+   for(var i = 0; i < f.elements.length; ++i) {
+    if(f.elements[i].checked)
+        f.elements[i].checked = false;
+}
+}
+</script>
+<link rel = "stylesheet" type="text/css" href="stylemap.css">
+<link rel = "stylesheet" type="text/css" href="quiz.css">
+
+<h2> <span class="titles"><script>document.write(title)</script> </span></h2> <br>
+
+
+<form name="quiz">
+<ol>
+<script>
+for(var q=0; q<questions.length; ++q) {
+   var question = questions[q];
+   var idx = 1 + q;
+   document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
+   for(var i in question.answers) {
+    document.writeln('<input type=radio name="q' + idx + '" value="' + i +
+    '" onClick="Engine(' + q + ', this.value)"><span class="answer">' + question.answers[i] + '</span><br/>');
+}
+}
+</script>
+</ol>
+<h2><input type="button" onClick="Score()" value="Check" /></h2>
+
+  </body>
+
+ <html>
