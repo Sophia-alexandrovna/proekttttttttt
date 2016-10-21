@@ -1,0 +1,12 @@
+#container {position:relative; background:#111111;padding:0px; height:680px;}
+.sliderbutton {float:left; width:35px; height:680px; cursor:pointer;}
+#slideleft {background:url(images/icons.gif) -50px -265px no-repeat}
+#slideleft:hover {background-position:-0 -265px}
+#slideright {background:url(images/icons.gif) 0 90px no-repeat}
+
+#slider {float:left; position:relative; overflow:auto; width:1400px; height:680px}
+#slider ul {position:absolute; list-style:none; top:100px; left:0}
+#slider li {float:left; width:1400px; height:680px}
+.pagination {position:absolute; top:200px; right:70px; list-style:none; height:25px}
+.pagination li {float:left; cursor:pointer; height:8px; width:8px; background:#ccc; margin:0 4px 0 0; border:1px solid #fff}
+.pagination li:hover, li.current {background:green}
