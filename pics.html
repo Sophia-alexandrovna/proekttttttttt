@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Home</title>
+<link rel="stylesheet" type="text/css"
+                         href="newmenu.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script type="text/javascript" src="tinyslider.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="wrap">
+        <div id="logo">
+            <h1>Norway</h1>
+        </div><!--logo-->
+        <div id="menu_wrapper">
+            <ul id="nav">
+                
+                <li><a class="active" href="pics.html"><p>HOME</p>  </a></li>
+  <li><a href="опрос2.11133.html" ><p>QUIZ</p>  </a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><p>GEOGRAPHY</p></a>
+    <div class="dropdown-content">
+      <a href="#"><p>INTERESTING PLACES</p></a>
+     
+      <a href="map44.html" target="_blank"><p>MAP</p></a>
+               <li id="end"><a href="#"><p>CONTACT</p></a></li>
+               </div>
+            </ul>
+        </div>
+    </div><!--wrap-->
+</div><!--header-->
+
+
+</div>
+	<div id="container">
+		<div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+		<div id="slider">
+			<ul>
+				<li><img src="photos1.jpg" width="1400" height="680" alt="Image One" /></li>
+				<li><img src="photos2.jpg" width="1400" height="680" alt="Image Two" /></li>
+				<li><img src="photos3.jpg" width="1400" height="680" alt="Image Three" /></li>
+				<li><img src="photos4.jpg" width="1400" height="680" alt="Image Four" /></li>
+			</ul>
+		</div>
+		<div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+		<ul id="pagination" class="pagination">
+			<li onclick="slideshow.pos(0)"></li>
+			<li onclick="slideshow.pos(1)"></li>
+			<li onclick="slideshow.pos(2)"></li>
+			<li onclick="slideshow.pos(3)"></li>
+		</ul>
+	</div>
+
+<script type="text/javascript">
+var slideshow=new TINY.slider.slide('slideshow',{
+	id:'slider',
+	auto:4,
+	resume:false,
+	vertical:false,
+	navid:'pagination',
+	activeclass:'current',
+	position:0,
+	rewind:false,
+	elastic:true,
+	left:'slideleft',
+	right:'slideright'
+});
+</script>
+</body>
+</html>
