@@ -13,13 +13,26 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 15pt;
 }
 
-span.quest {font-weight: bold; color:goldenrod;}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+span.quest{font-weight: bold; color:goldenrod;}
 span.titles{color:goldenrod;}
 span.answer {color:mediumturquoise;}
 button{position: absolute; padding-right: 300px;}
 h2 {
     text-align: center;
 }
+
 
 p {
     font-family: Verdana, Arial, Helvetica, sans-serif; 
@@ -38,7 +51,7 @@ p {
             <ul id="nav">
                 
                 <li><a class="active" href="pics.html"><p>HOME</p>  </a></li>
-  <li><a href="опрос2.1.html" ><p>QUIZ</p>  </a></li>
+  <li><a href="опрос2.11133.html" ><p>QUIZ</p>  </a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn"><p>GEOGRAPHY</p></a>
     <div class="dropdown-content">
@@ -75,24 +88,24 @@ var questions=[
     correctAnswer: 0
 },
 {
-    text: "If you own a television in Norway, you have to pay an annual licensing fee?",
+    text: "If you own a television in Norway, do you have to pay an annual licensing fee?",
     answers: ["yes",
           "no",
           "dont know"],
     correctAnswer: 0
 },
 {
-    text: "Who discovered Norway?",
-    answers: ["Willem Janszoon",
-          "Dik Hugh",
-          "James Cook",
-          "Al Tasn"],
+    text: "When was Norway's Golden Age?",
+    answers: ["In 16th century",
+          "In 18th century",
+          "In 10th century",
+          "In 14th century"],
     correctAnswer: 3
 },
 {
-    text: "Is Norway the world’s largest exporter of salmon.?",
-    answers: ["yes",
-          "no",
+    text: "Is Norway the world’s largest exporter of salmon?",
+    answers: ["yes      ",
+          "no       ",
           "dont know"],
     correctAnswer: 0
 }
@@ -104,7 +117,7 @@ function Score(){
    var answerText = "Results:\n";
    for(var i = 0; i < yourAns.length; ++i){
     var num = i+1;
-    answerText=answerText+"\n    Question "+ num +"";
+    answerText=answerText+"\n    Question В№"+ num +"";
     if(yourAns[i]!=questions[i].correctAnswer){
         answerText=answerText+"\n    Right answer: " +
         questions[i].answers[questions[i].correctAnswer] + "\n";
@@ -114,7 +127,7 @@ function Score(){
         ++score;
         }
        }
-   answerText=answerText+"\n Right answers: "+score+"\n";
+answerText=answerText+"\n Right answers: "+score+"\n";
    alert(answerText);
    yourAns = [];
    score = 0;
@@ -127,6 +140,7 @@ function clearForm(name) {
         f.elements[i].checked = false;
 }
 }
+
 </script>
 <link rel = "stylesheet" type="text/css" href="stylemap.css">
 <link rel = "stylesheet" type="text/css" href="quiz.css">
@@ -148,7 +162,7 @@ for(var q=0; q<questions.length; ++q) {
 }
 </script>
 </ol>
-<h2><input type="button" onClick="Score()" value="Check" /></h2>
+<h2><input type="button" class="button" onClick="Score()" value="Check" /></h2>
 
   </body>
 
