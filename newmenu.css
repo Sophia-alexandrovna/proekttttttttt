@@ -1,11 +1,12 @@
- @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+  @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Kranky|Mountains+of+Christmas");
 * { padding: 0; margin: 0; }
-body { background: #111111; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 3px;}
+body { background: #111111; font-family: 'Kranky', cursive;font-size: 13pt; text-transform: uppercase; letter-spacing: 3px;}
     #header {
         float: left;
         min-width: 100%;
         background-color:#111111 ;
         padding: 42px 2px;
+
         }
     #logo {color:green;position:absolute; float: left; width: 338px; height: 55px; z-index:300;padding-left: 55px;}
 
@@ -20,6 +21,7 @@ body { background: #111111; font-family: 'Lato', sans-serif; text-transform: upp
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Kranky', cursive;
 }
 
 
@@ -37,6 +39,7 @@ body { background: #111111; font-family: 'Lato', sans-serif; text-transform: upp
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 #nav li a:hover, .dropdown:hover .dropbtn {
@@ -73,7 +76,8 @@ body { background: #111111; font-family: 'Lato', sans-serif; text-transform: upp
 
 p {
      
-    font-size: 16pt; }
+    font-size: 19pt;
+    color:white; }
 @media screen and (max-width: 800px) {
     #menu { display: block;
         text-align: left;
