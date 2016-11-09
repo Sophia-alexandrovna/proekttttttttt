@@ -1,32 +1,36 @@
 <html>
  <head>
- <meta charset="utf-8">
- <link rel="stylesheet" type="text/css"
-                         href="filecss.css">
+ <title>quiz</title>
+ <meta charset=utf-8 />
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAzUlEQVRIS2Ocyszg+5+RYTYDA4M4AxbwrncuWHTSitsosnkRqmC+UHEyNm3EiL1k/M+QyjiFheEFLstBptDQASDjX4Ic8B/ECmVjwepqtucfweIGaftR5C/McgTzf0nyE+NbDDWrf/0Bi406YDQEBj4EmibOBeeC3IQIvKkZVy4gKwswMDBMXrACkgsG3AEilhXgEOCWsyHXM2Tp+/roCCQERh0w4CEw4IlwwB0wWhuOhsBoCAxoo/Q/wzNGaLN8DgMDgxhdm+UgyxkYMgAjmNy/ZTS38QAAAABJRU5ErkJggg==" rel="shortcut icon" type="image/x-icon" />
+ 
 <link rel="stylesheet" type="text/css"
                          href="newmenu.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kranky|Mountains+of+Christmas|Press+Start+2P" rel="stylesheet">
  <style type="text/css">
 
 ol{
     text-align: center;
-font-family: Verdana, Arial, Helvetica, sans-serif; 
-    font-size: 15pt;
+
+font-family: 'Amatic SC', cursive;
+    font-size: 30pt;
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #D59E1E;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
+    font-family: 'Kranky', cursive;
 }
 span.quest{font-weight: bold; color:goldenrod;}
-span.titles{color:goldenrod;}
+span.titles{color:#D76835;font-family: 'Kranky', cursive;font-size: 35pt;}
 span.answer {color:mediumturquoise;}
 button{position: absolute; padding-right: 300px;}
 h2 {
@@ -35,7 +39,7 @@ h2 {
 
 
 p {
-    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-family: 'Kranky', cursive;
     font-size: 19pt; }
 
  </style>
@@ -50,15 +54,15 @@ p {
         <div id="menu_wrapper">
             <ul id="nav">
                 
-                <li><a class="active" href="pics.html"><p>HOME</p>  </a></li>
+                <li><a class="active" href="index.html"><p>HOME</p>  </a></li>
   <li><a href="опрос2.11133.html" ><p>QUIZ</p>  </a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn"><p>GEOGRAPHY</p></a>
     <div class="dropdown-content">
-      <a href="#"><p>INTERESTING PLACES</p></a>
+      <a href="inter.html"><p>INTERESTING PLACES</p></a>
      
-      <a href="map44.html" target="_blank"><p>MAP</p></a>
-               <li id="end"><a href="#"><p>CONTACT</p></a></li>
+      <a href="map44.html"><p>MAP</p></a>
+               <li id="end"><a href="pybl.html"><p>CONTACT</p></a></li>
                </div>
             </ul>
         </div>
@@ -164,6 +168,6 @@ for(var q=0; q<questions.length; ++q) {
 </ol>
 <h2><input type="button" class="button" onClick="Score()" value="Check" /></h2>
 
-  </body>
+ </body>
 
  <html>
